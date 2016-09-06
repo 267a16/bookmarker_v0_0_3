@@ -42,6 +42,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <div class="top-bar-section">
                 <ul class="right">
                     <li>
+                        <?= $this->Html->link('bookmarker_v0_0_3', ['controller' => 'Bookmarks', 'action' => 'index']); ?>
+                    </li>
+                    <li>
                         <?php
                         $loguser = $this->request->session()->read('Auth.User');
                         if ($loguser) {
